@@ -88,7 +88,7 @@ submitBtn.addEventListener('click', (e) => {
 
 // Output listener
 output.addEventListener('click', (e) => {
-    if (e.target.className === 'interest-edit-btn') {
+    if (e.target.classList.contains('interest-edit-btn')) {
         const editId = e.target.id.split('--')[1];
         output.innerHTML = '';
         formReviewInput.classList.remove('hidden');
@@ -104,13 +104,12 @@ output.addEventListener('click', (e) => {
                 formSelect.value = interest.place.id;
             })
     }
-    if (e.target.className === 'interest-delete-btn') {
-        const userResponse = prompt('Are you sure you want to delete this item?');
-        if (userResponse === '') {
+    if (e.target.classList.contains('interest-delete-btn')) {
+        if (confirm('Are you sure you want to delete this item?') == true) {
             const deleteId = e.target.id.split('--')[1];
             output.innerHTML = '';
             API.deleteInterest(deleteId)
-                .then(response => {
+                .then(_deleted => {
                     displayInt.renderAll(output);
                 })
         }
