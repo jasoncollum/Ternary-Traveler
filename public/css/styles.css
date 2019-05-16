@@ -1,5 +1,49 @@
-/* Page styles */
+/* Color Theme Swatches in Hex */
+.Ternary-Traveler-1-hex { color: #63A5BF; }
+.Ternary-Traveler-2-hex { color: #426E80; }
+.Ternary-Traveler-3-hex { color: #84DDFF; }
+.Ternary-Traveler-4-hex { color: #213740; }
+.Ternary-Traveler-5-hex { color: #77C6E6; }
 
+/* Color Theme Swatches in RGBA */
+.Ternary-Traveler-1-rgba { color: rgba(99, 165, 191, 1); }
+.Ternary-Traveler-2-rgba { color: rgba(66, 110, 128, 1); }
+.Ternary-Traveler-3-rgba { color: rgba(132, 221, 255, 1); }
+.Ternary-Traveler-4-rgba { color: rgba(33, 55, 64, 1); }
+.Ternary-Traveler-5-rgba { color: rgba(119, 198, 230, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Ternary-Traveler-1-hsla { color: hsla(196, 41, 56, 1); }
+.Ternary-Traveler-2-hsla { color: hsla(197, 31, 38, 1); }
+.Ternary-Traveler-3-hsla { color: hsla(196, 100, 75, 1); }
+.Ternary-Traveler-4-hsla { color: hsla(197, 31, 19, 1); }
+.Ternary-Traveler-5-hsla { color: hsla(197, 68, 68, 1); }
+
+
+/* Base Styles */
+body {
+    background-color: rgb(223, 234, 238);
+    color: rgb(59, 101, 117);
+    font-size: 1.2em;
+}
+
+h1, h2, h3 {
+
+}
+
+h4, h5, h6 {
+
+}
+
+select {
+    border: none;
+}
+
+.btn {
+    width: 100px;
+}
+
+/* Page styles */
 .hidden {
     display: none;
 }
@@ -7,10 +51,23 @@
 /* INTEREST FORM */
 #form-container {
     margin: 5%;
+    border: .5px solid lightgrey;
+    background-color: rgb(246, 251, 252); 
 }
+
 #interest-form {
     display: flex;
     flex-direction: column;
+    margin: 5%;
+}
+
+#interest-form-save-btn {
+    margin: 20px 20px 0 20px;
+}
+
+.input {
+    margin: 5px;
+    background-color: rgb(250, 254, 255);
 }
 
 .warning {
@@ -21,12 +78,13 @@
 .interest-item {
     display: flex;
     flex-direction: column;
-    align-items: center;
     border: .5px solid lightgrey;
     margin: 5%;
-    padding-bottom: 25px;
+    padding: 0 20px 0 25px;
+    background-color: rgb(255, 255, 255);
 }
 
-.interest-edit-btn {
+.interest-edit-btn,
+.interest-delete-btn {
     margin: 20px;
 }

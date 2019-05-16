@@ -28,12 +28,12 @@ const displayInt = {
 
                     const intEditBtn = document.createElement('button');
                     intEditBtn.setAttribute('id', `edit-btn--${interest.id}`);
-                    intEditBtn.className = 'interest-edit-btn';
+                    intEditBtn.className = 'btn interest-edit-btn';
                     intEditBtn.textContent = 'Edit';
 
                     const intDeleteBtn = document.createElement('button');
                     intDeleteBtn.setAttribute('id', `delete-btn--${interest.id}`);
-                    intDeleteBtn.className = 'interest-delete-btn';
+                    intDeleteBtn.className = 'btn interest-delete-btn';
                     intDeleteBtn.textContent = 'Delete';
 
                     intDiv.append(intPlace, intName, intDesc, intCost);
